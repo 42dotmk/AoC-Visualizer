@@ -7,7 +7,10 @@ You can find the 2024 edition at https://aoc.42.mk.
 Developed by [42.mk](https://42.mk), a hackerspace in Skopje, Macedonia.
 
 ## Context
+
 For the 2024 AdventOfCode, 42.mk is organizing a charity event where participants can buy a ticket and participate in a prize pool/fund raiser type of event. The leaderboard is used to track the progress of the participants and display the rankings in real time.
+
+Read more about it on our page [here](https://42.mk/events/advent-of-code-2024).
 
 You can deploy your own instance of the leaderboard visualizer by following the instructions below and customizing the appropriate variables.
 
