@@ -17,6 +17,7 @@ const Layout = ({ children }: { children: any }) => html`<!DOCTYPE html>
         rel="stylesheet"
       />
       <title>Advent Of Code 2024 | Base42</title>
+      <link rel="icon" href="/favicon.svg">
       <link rel="stylesheet" crossorigin href="/style.css" />
     </head>
     <body class="font-mono prose prose-slate prose-invert">
