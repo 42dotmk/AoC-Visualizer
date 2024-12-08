@@ -1,0 +1,17 @@
+{
+  "name": "@42dotmk/aoc-visualizer",
+  "scripts": {
+    "build": "tailwindcss build -i src/style.css -o public/style.css",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "hono": "^4.6.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "tailwindcss": "^3.4.16",
+    "wrangler": "^3.88.0"
+  }
+}

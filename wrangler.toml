@@ -1,0 +1,26 @@
+name = "aoc-2024"
+main = "src/index.tsx"
+compatibility_date = "2024-12-05"
+assets = { directory = "public" }
+
+routes = [
+  { pattern = "aoc.42.mk", custom_domain = true },
+  { pattern = "aoc24.42.mk", custom_domain = true }
+]
+
+[vars]
+LEADERBOARD_ID = "126659"
+
+[[kv_namespaces]]
+binding = "AoC2024Leaderboard"
+id = "78a0df3a2f274efb9c75c3e9e5009f52"
+preview_id = "397dc401e54746908bd2e99e50f9026e"
+
+[build]
+command = "npm run build"
+cwd = "public"
+watch_dir = "./src"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
