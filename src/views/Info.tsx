@@ -14,11 +14,14 @@ const Info = ({ members }: { members: Member[] }) => {
         ))}
       </div>
 
-      <div className="mx-auto flex flex-col items-center content-center container max-w-4xl">
+      <a href="https://42.mk">
         <img
-          src="https://42.mk/img/base.svg"
+          src="/base.svg"
           className="m-0 w-[250px] h-[150px]"
         />
+      </a>
+
+      <div className="mx-auto flex flex-col items-center content-center container max-w-4xl">
         <div>
           <p>
             Welcome to the Advent of Code 2024 Leaderboard at{" "}
