@@ -54,7 +54,10 @@ const Leaderboard = async ({ env }: HonoEnvProps) => {
           {sortedMembers.map((member, index) => (
             <li key={member.id}>
               <p>
-                <span className="w-8 inline-block">{index + 1}.</span>{" "}
+                <span className="w-8 inline-block">{index + 1}.</span>
+                <span className="w-8 ml-2 inline-block mr-4">
+                  {member.local_score}{" "}
+                </span>
                 <span className="lg:inline-block hidden relative top-2">
                   {renderStars(member)}
                 </span>{" "}
