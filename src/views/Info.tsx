@@ -35,8 +35,12 @@ const Info = ({ members }: { members: Member[] }) => {
 <script>
   const ascii = document.getElementById("ascii");
   const ALPHANUMERIC = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const getRandomChar = () => ALPHANUMERIC[Math.floor(Math.random() * ALPHANUMERIC.length)];
-  ascii.innerHTML = ascii.innerHTML.replace(/M/g, getRandomChar());
+  const SNOWFLAKES = "ABCDEFGHI❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅❅JKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const getRandomChar = (str) => str[Math.floor(Math.random() * str.length)];
+  
+  setInterval(() => {
+    ascii.innerHTML = ascii.innerHTML.replace(/M/g, '<span class="replaceable">' + getRandomChar(ALPHANUMERIC) + '</span>');
+  }, 3000);
 </script>
 `}
       </a>
